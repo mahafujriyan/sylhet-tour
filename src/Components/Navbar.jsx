@@ -7,39 +7,59 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-red-500 via-red-700 to-red-900 text-white shadow-md">
+    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-red-500 via-red-700 to-red-900 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold">
-        <div>
-            <img className="w-15 h-10" src="/asscets/logo-1 (2).png" alt="" />
-        </div>
+        
+
+        <Link href="/" className="flex items-center">
+          <img
+            src="/asscets/logo-1 (2).png"
+            alt="Logo"
+            className="h-10 w-auto"
+          />
         </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
-          <Link href="/">Home</Link>
-          <Link href="/tours">Tours</Link>
-          <Link href="/about">About Us</Link>
-          <Link href="/contact">Contact</Link>
+        <ul className="hidden lg:flex space-x-6 text-lg font-medium">
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/tours">Tours</Link></li>
+          <li><Link href="/about">About Us</Link></li>
+          <li><Link href="/contact">Contact</Link></li>
+        </ul>
+
+     
+        <div className="hidden lg:block">
+          <Link
+            href="/contact"
+            className="btn btn-sm bg-white text-red-700 hover:bg-red-200 border-none rounded-full px-4"
+          >
+            Get Started
+          </Link>
         </div>
 
-        {/* Mobile Hamburger */}
+    
         <button
-          className="md:hidden text-2xl"
+          className="lg:hidden text-2xl p-2"
           onClick={() => setOpen(!open)}
+          aria-label="Toggle Menu"
         >
           {open ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
+    
       {open && (
-        <div className="md:hidden bg-red-800 px-4 pb-4 space-y-3">
+        <div className="lg:hidden bg-red-800 px-6 py-4 space-y-3">
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/tours" onClick={() => setOpen(false)}>Tours</Link>
           <Link href="/about" onClick={() => setOpen(false)}>About Us</Link>
           <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link
+            href="/contact"
+            onClick={() => setOpen(false)}
+            className="block btn btn-sm bg-white text-red-700 hover:bg-red-200 border-none rounded-full w-full"
+          >
+            Get Started
+          </Link>
         </div>
       )}
     </nav>
