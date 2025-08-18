@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "/assets/saint_martin.jpg",
+    "image": "https://i.ibb.co.com/5W7PZXW5/sainmartin.jpg",
     "name": "Saint Martin's Island",
     "rating": 4.8,
     "package": "2 Days 1 Night",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "image": "/assets/sundarbans.jpg",
+    "image": "https://i.ibb.co.com/Gvb0CNXW/sunderban.jpg",
     "name": "Sundarbans",
     "rating": 4.7,
     "package": "3 Days 2 Nights",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "image": "/assets/sajek_valley.jpg",
+    "image": "https://i.ibb.co.com/xKbW9rcd/Sajek-Valley-2.jpg",
     "name": "Sajek Valley",
     "rating": 4.9,
     "package": "2 Days 1 Night",
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "image": "/assets/cox_bazar.jpg",
+    "image": "https://i.ibb.co.com/BKLwptKf/cosx-bazzar.jpg",
     "name": "Cox's Bazar",
     "rating": 4.6,
     "package": "2 Days 1 Night",
@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "image": "/assets/srimangal.jpg",
+    "image": "https://i.ibb.co.com/jkqGtsTn/sre-mangalo.jpg",
     "name": "Srimangal",
     "rating": 4.5,
     "package": "1 Day Trip",
@@ -56,7 +56,7 @@
   },
   {
     "id": 6,
-    "image": "/assets/rangamati.jpg",
+    "image": "https://i.ibb.co.com/LhzYhy2v/rangamati.jpg",
     "name": "Rangamati",
     "rating": 4.7,
     "package": "2 Days 1 Night",
@@ -67,7 +67,7 @@
   },
   {
     "id": 7,
-    "image": "/assets/kuakata.jpg",
+    "image": "https://i.ibb.co.com/N6zkNH4J/kuakata.jpg",
     "name": "Kuakata",
     "rating": 4.6,
     "package": "2 Days 1 Night",
@@ -78,7 +78,7 @@
   },
   {
     "id": 8,
-    "image": "/assets/jaflong.jpg",
+    "image": "https://i.ibb.co.com/ZzsTPCrR/jaflong.jpg",
     "name": "Jaflong",
     "rating": 4.5,
     "package": "1 Day Trip",
@@ -89,7 +89,7 @@
   },
   {
     "id": 9,
-    "image": "/assets/lalbagh_fort.jpg",
+    "image": "https://i.ibb.co.com/Tq2HNhj1/lal-bag.jpg",
     "name": "Lalbagh Fort",
     "rating": 4.4,
     "package": "Half Day Trip",
@@ -100,7 +100,7 @@
   },
   {
     "id": 10,
-    "image": "/assets/kuinari.jpg",
+    "image": "https://i.ibb.co.com/yn9ccgbB/jhorna.jpg",
     "name": "Kuinari Waterfalls",
     "rating": 4.6,
     "package": "1 Day Trip",

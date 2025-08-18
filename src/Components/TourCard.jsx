@@ -14,7 +14,7 @@ export default function TourCard() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1, type: "spring", stiffness: 100 }}
         >
-          {/* Image */}
+        
           <figure>
             <img
               src={tour.image}
@@ -23,12 +23,11 @@ export default function TourCard() {
             />
           </figure>
 
-          {/* Content */}
+        
           <div className="p-4 flex flex-col justify-between h-full">
-            {/* Title */}
+            
             <h2 className="text-2xl font-bold text-red-700">{tour.name}</h2>
 
-            {/* Rating & Package */}
             <div className="flex items-center justify-between mt-2">
               <div className="flex items-center text-yellow-400">
                 {"⭐".repeat(Math.floor(tour.rating))}
@@ -42,19 +41,12 @@ export default function TourCard() {
               </span>
             </div>
 
-            {/* Cost & Members */}
+           
             <p className="mt-2 text-gray-700 font-semibold">
               Cost: BDT {tour.cost} ({tour.members}{" "}
               {tour.members > 1 ? "members" : "member"})
             </p>
 
-            {/* Description */}
-            <p className="mt-2 text-gray-600 text-sm line-clamp-3">
-              {tour.description}
-            </p>
-
-            {/* Route */}
-            <p className="mt-1 text-gray-400 text-xs">Route: {tour.route}</p>
 
             {/* Button */}
             <div className="mt-4">
