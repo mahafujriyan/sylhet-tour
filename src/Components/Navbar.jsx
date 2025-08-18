@@ -1,5 +1,5 @@
 "use client";
-import Link from "next/link";
+
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -11,29 +11,29 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         
 
-        <Link href="/" className="flex items-center">
+        <a href="/" className="flex items-center">
           <img
             src="/asscets/logo-1 (2).png"
             alt="Logo"
             className="h-10 w-auto"
           />
-        </Link>
+        </a>
 
         <ul className="hidden lg:flex space-x-6 text-lg font-medium">
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/tours">Tours</Link></li>
-          <li><Link href="/about">About Us</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Tours</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
 
      
         <div className="hidden lg:block">
-          <Link
-            href="/contact"
+          <a
+            href="#"
             className="btn btn-sm bg-white text-red-700 hover:bg-red-200 border-none rounded-full px-4"
           >
             Get Started
-          </Link>
+          </a>
         </div>
 
     
@@ -49,17 +49,17 @@ export default function Navbar() {
     
       {open && (
         <div className="lg:hidden bg-red-800 px-6 py-4 space-y-3">
-          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link href="/tours" onClick={() => setOpen(false)}>Tours</Link>
-          <Link href="/about" onClick={() => setOpen(false)}>About Us</Link>
-          <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
-          <Link
+          <a href="/" >Home</a>
+          <a href="#" >Tours</a>
+          <a href="#" >About Us</a>
+          <a href="#" >Contact</a>
+          <a
             href="/contact"
             onClick={() => setOpen(false)}
             className="block btn btn-sm bg-white text-red-700 hover:bg-red-200 border-none rounded-full w-full"
           >
             Get Started
-          </Link>
+          </a>
         </div>
       )}
     </nav>
