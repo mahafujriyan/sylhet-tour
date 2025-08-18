@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-red-500 via-red-700 to-red-900 text-white shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-green-300 via-blue-500 to-green-300 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         
 
