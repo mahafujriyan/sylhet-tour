@@ -34,3 +34,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Travel Guru 🌏✈️
+
+Travel Guru is a modern travel website built with Next.js and Tailwind CSS.  
+It provides users with detailed tour packages, travel tips, activities, and famous destinations in Bangladesh 
+## Feature
+ Dynamic tour details page with images, activities, hotels, and travel tips.  
+  Responsive design for desktop, tablet, and mobile devices.  
+  Custom footer with logo, quick links, and social media icons.  
+  Easy to add/update tour packages via a central data file.  
+  Clean and modern UI using travel-themed colors.  
+  ## Live Link 
+  

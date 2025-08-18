@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,34 +10,34 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gradient-to-r from-green-300 via-blue-500 to-green-300 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        
 
-        <a href="/" className="flex items-center">
+        <Link href="/" className="flex items-center">
           <img
             src="/asscets/logo-1 (2).png"
             alt="Logo"
-            className="h-10 w-auto"
+            className="h-15 w-auto"
           />
-        </a>
+        </Link>
 
+      
         <ul className="hidden lg:flex space-x-6 text-lg font-medium">
-          <li><a href="/">Home</a></li>
-          <li><a href="#">Tours</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/tour">Tours</Link></li>
+          <li><Link href="/about">About Us</Link></li>
+          <li><Link href="Contact">Contact</Link></li>
         </ul>
 
-     
+        {/* Desktop Button */}
         <div className="hidden lg:block">
-          <a
-            href="#"
+          <Link
+            href="/contact"
             className="btn btn-sm bg-white text-red-700 hover:bg-red-200 border-none rounded-full px-4"
           >
             Get Started
-          </a>
+          </Link>
         </div>
 
-    
+        
         <button
           className="lg:hidden text-2xl p-2"
           onClick={() => setOpen(!open)}
@@ -46,20 +47,20 @@ export default function Navbar() {
         </button>
       </div>
 
-    
+      {/* Mobile Menu */}
       {open && (
         <div className="lg:hidden bg-red-800 px-6 py-4 space-y-3">
-          <a href="/" >Home</a>
-          <a href="#" >Tours</a>
-          <a href="#" >About Us</a>
-          <a href="#" >Contact</a>
-          <a
+          <Link href="/" onClick={() => setOpen(false)}>Home</Link>
+          <Link href="/tour" onClick={() => setOpen(false)}>Tours</Link>
+          <Link href="/about" onClick={() => setOpen(false)}>About Us</Link>
+          <Link href="/Contact" onClick={() => setOpen(false)}>Contact</Link>
+          <Link
             href="/contact"
             onClick={() => setOpen(false)}
             className="block btn btn-sm bg-white text-red-700 hover:bg-red-200 border-none rounded-full w-full"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       )}
     </nav>

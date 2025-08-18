@@ -1,5 +1,5 @@
 import Carousel from "@/Components/Carousel";
-import TourCard from "@/Components/TourCard";
+import TourCard from "./tour/page";
 
 
 export default function Home() {
@@ -7,7 +7,8 @@ export default function Home() {
     <main>
      
       <Carousel />
-      <TourCard></TourCard>
+<TourCard></TourCard>
+
     </main>
   );
 }

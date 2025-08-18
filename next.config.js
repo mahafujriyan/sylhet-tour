@@ -1,7 +1,6 @@
 
-
- 
 const config = {
+
   images: {
     remotePatterns: [
       {
