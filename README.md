@@ -45,4 +45,14 @@ It provides users with detailed tour packages, travel tips, activities, and famo
   Easy to add/update tour packages via a central data file.  
   Clean and modern UI using travel-themed colors.  
   ## Live Link 
-  
+  https://sylhet-tour.vercel.app/ 
+  ## Tech Stuck
+  Next.js – React framework for SSR & SSG
+
+React – Frontend UI library
+
+Tailwind CSS – Utility-first CSS framework
+
+React Icons – For icons in UI components
+
+Next/Image – Optimized image component for faster load
